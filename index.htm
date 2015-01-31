@@ -1,0 +1,91 @@
+<!document html>
+<head>
+	<title></title>
+	<style>
+		body,table,tr,td,img{margin:0;}
+		body,p,b,a,i,div,span,font{font-family:arial;}
+		#mybody_wrapper{
+			width:100%;height:100%;
+			position:relative;
+		}
+		#mybody_2{
+			position:absolute;
+			top:0;
+			left;0;
+			width:100%;height:100%;
+			}
+		#mybody{
+			width:100%;height:100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-image:url("fondo1.jpg");		
+			filter: alpha(opacity=30);
+			-moz-opacity: 0.3;
+			-khtml-opacity: 0.3;
+			opacity: 0.3;
+		}
+		#mytop{width:100%;background:green;height:8px;}
+		#mymaincontainer{max-width:960px;margin:0 auto;}
+
+		#mymenu{background:Red;}
+		#myheader{background:orange;margin: 0 0 20px 0;}
+		#myfooter{bottom:0;position:fixed;width:100%;background:orange;margin: 20px 0 0 0;text-align:center;}
+		#myfooter2{max-width:960px;background:red;margin: 0px auto 0 auto;padding:10px;height:10px;}
+
+		#mycontent{ display:inline;max-width:760px;padding:0 20px;}
+		#mysidebarleft{float:left;max-width:100px;background:yellow;}
+		#mysidebarright{float:right; max-width:100px;background:purple;}
+
+		.myclear{clear:both;}
+		
+		input[type=text],input[type=email],input[type=search]{border-radius:10px 0 0 10px;}
+		input[type=submit]{border-radius:0 10px  10px 0; background-rgba(0,0,0,0..2);}
+		input{border:1px #ddd solid;}
+
+		/* ####### responsive layout CSS ####### */
+
+@media (max-width: 600px){ /* responsive layout break point */	
+	#mysidebarleft{	float: none;	width: 100%;padding: 0 5px; margin: 10px  0;	}
+	#mysidebarright{	float: none;	width: 100%;padding: 0 5px;	margin: 10px  0;}
+	#mycontent{	width: 100%;padding: 0 5px; margin: 10px  0;}
+}
+	</style>
+</head>
+<body>
+	<div id=mybody_wrapper>
+		<div id=mybody>
+		</div>
+		<div id=mybody_2>
+			<div id=mytop>
+			</div>
+			<div id=mymaincontainer>
+				<div id=myheader>
+					<div id=mymenu>
+					my beautiful menu
+					</div>
+					my header
+				</div>
+				<div id=mycontainer>
+					<div id=mycontent>
+						my beautiful content
+						<form><input type=text name=test><input type=submit value=Find></form>
+					</div>
+					<div id=mysidebarleft>
+						my beautiful sidebar left
+					</div>
+					<div id=mysidebarright>
+						my beautiful sidebar right
+					</div>
+				</div>
+			</div>
+			<br class=myclear></br>
+			<div id=myfooter>
+				<div id=myfooter2>
+					myfooter
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
